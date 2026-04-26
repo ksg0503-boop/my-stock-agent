@@ -1,0 +1,30 @@
+name: Stock Agent Daily Run
+
+# 언제 실행할지 정하는 부분
+on:
+  schedule:
+    - cron: '0 0 * * *' # 매일 한국 시간 오전 9시에 자동으로 실행
+  workflow_dispatch: # 내가 원할 때 수동으로 '버튼' 눌러서 실행하는 기능
+
+jobs:
+  run-agents:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          pip install crewai langchain-groq requests 
+          # 필요한 라이브러리가 더 있다면 여기에 추가하세요
+
+      - name: Run CrewAI
+        env:
+          # 여기에 나중에 암호를 연결할 거예요
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: python main.py # 실행 파일 이름이 다르면 수정하세요 (예: stock_agent.py)
