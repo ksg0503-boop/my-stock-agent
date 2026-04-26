@@ -1,0 +1,218 @@
+---
+daily_technical_swing_trading_analysis:
+  description: |-
+    Analyze today's global market news for swing trading opportunities with 3-10 day timeframes. **DAILY SWING TRADING FOCUS:**
+    1) Identify breakout patterns, momentum setups, and volume confirmations for tomorrow's entry
+    2) Compete against ALL asset classes for limited TOP 5 portfolio slots
+    3) Provide specific entry triggers, stop-loss levels (3-8% below entry), and profit targets (6-16% minimum)
+    4) Focus on stocks showing technical convergence with news catalysts
+    5) Maximum 2 recommendations to compete against other analysts
+    6) Validate setups against weekly trading frequency (4 trades max)
+    7) Assess how your picks rank against crypto, ETFs, commodities, and other stocks
+
+    **SWING TRADING CRITERIA:**
+    - Clear 3-10 day momentum potential with volume confirmation
+    - Risk/reward ratio of at least 1:2
+    - Technical breakout patterns (triangles, flags, cup-and-handle)
+    - News catalysts supporting technical setup
+  expected_output: 'A daily swing trading technical report including: 1) Maximum 2
+    high-conviction swing trade setups with complete entry/exit strategies, 2) Specific
+    entry triggers for tomorrow, stop-losses (3-8%), and profit targets (6-16%+),
+    3) Competitive ranking against other asset classes, 4) Volume and momentum confirmation
+    analysis, 5) 3-10 day timeframe projections, 6) Risk/reward calculations for each
+    setup, 7) Confidence scores (1-10) for swing trading success'
+  agent: senior_technical_market_analyst
+daily_fundamental_swing_catalyst_analysis:
+  description: |-
+    Research today's global financial news for fundamental swing trading catalysts with 3-10 day impact potential. **DAILY COMPETITIVE FOCUS:**
+    1) Identify companies with earnings reactions, guidance changes, or sector rotation potential
+    2) Compete for maximum 2 slots in the daily TOP 5 portfolio against all asset classes
+    3) Focus on fundamental catalysts creating 6-16% swing potential within 10 days
+    4) Analyze upcoming earnings, analyst upgrades/downgrades, and corporate developments
+    5) Provide risk/reward assessments with clear exit strategies
+    6) Justify why fundamental picks outrank technical, crypto, ETF, or commodity alternatives
+
+    **SWING CATALYST CRITERIA:**
+    - Earnings reactions or guidance revisions within next 10 days
+    - Strong balance sheets capable of surviving short-term volatility
+    - Clear fundamental catalysts with measurable impact timeline
+    - Sector rotation opportunities with momentum backing
+  expected_output: 'A daily fundamental catalyst report including: 1) Maximum 2 fundamental
+    swing setups competing for TOP 5 slots, 2) Specific catalyst timeline (3-10 days)
+    with expected price reactions, 3) Competitive analysis vs other asset classes,
+    4) Risk/reward calculations with exit strategies, 5) Upcoming earnings/events
+    calendar, 6) Sector rotation potential, 7) Confidence scores (1-10) for fundamental
+    catalyst success'
+  agent: fundamental_market_research_analyst
+geopolitical_risk_assessment:
+  description: Analyze today's global political and economic developments that could
+    impact financial markets. Focus on international relations, policy changes, trade
+    agreements, regulatory shifts, and geopolitical tensions. Identify how these factors
+    create investment opportunities or risks across different regions and sectors.
+  expected_output: 'A geopolitical risk analysis report containing: 1) Major geopolitical
+    developments and their market implications, 2) Regional and sector-specific impacts,
+    3) Investment opportunities emerging from geopolitical trends, 4) Risk mitigation
+    strategies, 5) Confidence level in geopolitical assessments (1-10 scale)'
+  agent: geopolitical_risk_analyst
+chart_pattern_analysis:
+  description: Analyze today's global market news and identify stocks showing strong
+    chart patterns and price action signals. Focus on breakout patterns, support/resistance
+    levels, volume analysis, and candlestick formations. Provide specific entry points,
+    stop-loss levels, and price targets based on technical chart analysis.
+  expected_output: 'A comprehensive chart pattern analysis report including: 1) Identified
+    chart patterns from news-driven stocks, 2) Key support and resistance levels,
+    3) Volume analysis and confirmation signals, 4) Specific entry points and stop-loss
+    recommendations, 5) Price targets based on pattern measurements, 6) Risk/reward
+    ratios for each opportunity, 7) Confidence rating (1-10) for each chart setup'
+  agent: professional_chart_pattern_analyst
+momentum_and_sentiment_analysis:
+  description: Analyze market momentum indicators and sentiment shifts from today's
+    global news. Evaluate RSI, MACD, momentum oscillators, institutional money flows,
+    and market sentiment to identify stocks with strong momentum potential. Include
+    social media sentiment and options flow analysis where relevant.
+  expected_output: 'A detailed momentum analysis report covering: 1) Momentum indicator
+    readings for news-affected stocks, 2) Institutional money flow analysis, 3) Market
+    sentiment shifts and social sentiment tracking, 4) Options flow and unusual activity,
+    5) Momentum strength ratings and directional bias, 6) Short-term and medium-term
+    momentum forecasts, 7) Confidence scores (1-10) for momentum plays'
+  agent: market_momentum_and_sentiment_specialist
+cryptocurrency_market_analysis:
+  description: |-
+    Analyze cryptocurrency markets and digital asset opportunities from today's global news. **CONSISTENCY FRAMEWORK**:
+    1) Focus on top 10 cryptocurrencies by market cap (BTC, ETH, BNB, XRP, ADA, SOL, DOT, DOGE, AVAX, MATIC)
+    2) For crypto stocks, limit to established companies: MSTR, COIN, MARA, RIOT, HIVE, SQ, PYPL
+    3) Only recommend cryptocurrencies above $10B market cap for stability
+    4) Require clear regulatory or institutional adoption catalysts
+    5) Maximum 2 crypto + 2 crypto-stock recommendations
+    Evaluate Bitcoin, Ethereum, major altcoins, and crypto-related stocks. Include regulatory developments, institutional adoption, and blockchain trends.
+  expected_output: 'A focused crypto analysis report including: 1) Analysis limited
+    to top 10 cryptocurrencies by market cap, 2) Maximum 2 crypto + 2 crypto-stock
+    recommendations from established universe, 3) Regulatory impact analysis with
+    specific catalysts, 4) Institutional adoption trends with concrete evidence, 5)
+    Clear correlation analysis with traditional markets, 6) Investment recommendations
+    with strict confidence ratings (1-10)'
+  agent: cryptocurrency_and_digital_assets_analyst
+small_cap_opportunity_discovery:
+  description: |-
+    Research today's global news to identify small-cap and mid-cap companies (market cap $1B-$10B) that could benefit from current market developments. **FOCUS CONSTRAINTS**:
+    1) Only analyze companies with market cap between $1B-$10B (avoid micro-caps for stability)
+    2) Prioritize companies with revenue growth >15% and positive cash flow
+    3) Focus on specific sectors: Technology, Healthcare, Clean Energy, and Consumer Discretionary
+    4) Maximum 3 small-cap recommendations to maintain quality over quantity
+    5) Require at least 2 institutional analyst coverage for legitimacy
+    Focus on emerging growth stories, undervalued companies with catalysts, and innovative business models in growing niches.
+  expected_output: 'A focused small-cap analysis report including: 1) Maximum 3 small-cap
+    opportunities meeting strict criteria, 2) Growth catalysts and business model
+    analysis, 3) Market cap validation ($1B-$10B range), 4) Institutional coverage
+    confirmation, 5) Risk factors and competitive analysis, 6) Expected growth rates
+    with supporting data, 7) Confidence ratings (1-10) for each pick'
+  agent: small_cap_growth_specialist
+macro_sector_flow_analysis:
+  description: Analyze today's global economic and market news to identify macro trends
+    driving sector rotation and capital flows. Track institutional money movements
+    between different industries, evaluate policy impacts on sector preferences, and
+    identify emerging sectors gaining momentum based on macroeconomic developments.
+  expected_output: 'A detailed macro sector rotation analysis including: 1) Current
+    sector rotation trends from news analysis, 2) Institutional capital flow patterns
+    and shifts, 3) Policy and economic impacts on different sectors, 4) Emerging industry
+    opportunities and declining sectors, 5) Cyclical vs secular sector trends, 6)
+    Top sector recommendations with rationale, 7) Investment timing and allocation
+    suggestions, 8) Confidence levels (1-10) for sector rotation predictions'
+  agent: macro_sector_rotation_analyst
+etf_market_opportunity_analysis:
+  description: |-
+    Analyze today's global market news to identify ETF investment opportunities across different sectors, themes, and asset classes. **FOCUS CONSTRAINTS:**
+    1) Evaluate major sector ETFs (Technology, Healthcare, Energy, Financials, Consumer) based on current trends
+    2) Assess thematic ETFs (AI, Clean Energy, Cybersecurity, Infrastructure) for emerging opportunities
+    3) Review international and emerging market ETFs for global diversification
+    4) Maximum 4 ETF recommendations with clear rationale for each
+    5) Consider expense ratios, tracking efficiency, and liquidity factors
+    6) Provide tactical allocation suggestions for different risk profiles
+    Focus on ETFs that can provide efficient exposure to current market trends and hedge against identified risks.
+  expected_output: 'A comprehensive ETF analysis report including: 1) Maximum 4 ETF
+    recommendations across sectors/themes, 2) Cost-efficiency analysis with expense
+    ratio considerations, 3) Tactical allocation suggestions for different market
+    conditions, 4) Risk-adjusted return potential, 5) ETF vs individual stock trade-offs,
+    6) Portfolio diversification benefits, 7) Confidence ratings (1-10) for each ETF
+    opportunity'
+  agent: etf_strategy_specialist
+commodity_and_materials_market_analysis:
+  description: |-
+    Analyze today's global news for commodity market opportunities and materials sector investments. **ANALYSIS FRAMEWORK:**
+    1) Evaluate precious metals (Gold, Silver, Copper) as inflation hedges and safe-haven assets
+    2) Assess energy commodities (Oil, Natural Gas) based on geopolitical and supply/demand factors
+    3) Review agricultural commodities affected by weather, trade, and geopolitical events
+    4) Identify commodity-related stocks: mining companies, energy firms, materials processors
+    5) Maximum 3 commodity investments + 2 commodity-related stocks
+    6) Consider commodity ETFs, futures, and direct exposure options
+    Focus on commodities benefiting from current global trends, inflation protection, and supply-demand imbalances.
+  expected_output: 'A detailed commodity market analysis including: 1) Maximum 3 commodity
+    recommendations with supply-demand analysis, 2) Maximum 2 commodity-related stock
+    picks, 3) Inflation hedge effectiveness assessment, 4) Geopolitical risk impacts
+    on commodity prices, 5) Storage and investment vehicle options (ETFs, futures,
+    stocks), 6) Seasonal and cyclical timing considerations, 7) Confidence levels
+    (1-10) for each commodity play'
+  agent: commodities_and_materials_analyst
+federal_reserve_policy_impact_analysis:
+  description: |-
+    Monitor and analyze Federal Reserve policy developments and their market implications from today's news. **POLICY MONITORING SCOPE:**
+    1) Track latest Fed communications, FOMC member speeches, and policy signals
+    2) Analyze economic data releases (CPI, employment, GDP) impacting Fed decisions
+    3) Assess current interest rate trajectory and quantitative policy changes
+    4) Evaluate sector-specific impacts of monetary policy (Banks, REITs, Growth vs Value)
+    5) Identify investment opportunities created by policy shifts
+    6) Maximum 3 policy-driven investment themes with supporting evidence
+    Focus on how current and anticipated Fed actions create specific investment opportunities and risks across asset classes.
+  expected_output: 'A comprehensive Fed policy analysis including: 1) Latest policy
+    developments and market implications, 2) Interest rate trajectory assessment with
+    timing predictions, 3) Maximum 3 policy-driven investment themes, 4) Sector rotation
+    opportunities based on policy stance, 5) Bond market impacts and yield curve analysis,
+    6) Currency and international market effects, 7) Confidence ratings (1-10) for
+    policy predictions and investment themes'
+  agent: federal_reserve_and_monetary_policy_analyst
+daily_investment_committee_consensus:
+  description: |-
+    Review and synthesize daily analysis from all eleven specialists with **ULTRA-STRICT CONSENSUS REQUIREMENTS:**
+
+    **FINAL RECOMMENDATION CRITERIA:**
+    1) **MAXIMUM 5 TOTAL RECOMMENDATIONS** across all asset classes (forces prioritization and sector competition)
+    2) Only recommend assets that receive support from AT LEAST 6 out of 11 analysts (raised threshold for higher selectivity)
+    3) Confidence scores must average 8+ across supporting analysts (raised from 7+ for swing trading precision)
+    4) **SECTOR COMPETITION**: Assets must compete across categories - best opportunities win regardless of type
+    5) **SWING TRADING FOCUS**: 3-10 day holding periods, clear entry/exit strategies, risk/reward ratios 1:2 minimum
+    6) **TRADING FREQUENCY CONTROL**: Maximum 4 position changes per week, prioritize high-conviction plays
+    7) Must maintain 60% consistency with previous session unless major market catalysts warrant changes (lowered for swing trading flexibility)
+
+    **ENHANCED CONSENSUS PROCESS:**
+    - Rank ALL recommendations by analyst support + confidence scores + risk-adjusted returns
+    - Force competition between large-cap stocks, small-caps, ETFs, crypto, and commodities
+    - Select only TOP 5 opportunities regardless of asset class
+    - Ensure each pick has 3-10 day swing trading potential with clear technical setups
+    - Validate against weekly trading frequency limits (max 4 trades/week)
+    - Prioritize momentum + technical + fundamental convergence for swing trades
+
+    **SWING TRADING REQUIREMENTS:**
+    - Clear entry triggers and stop-loss levels (typically 3-8% below entry)
+    - Defined profit targets (minimum 6-16% for 1:2 risk/reward)
+    - Volume confirmation for entry signals
+    - Maximum 10-day holding periods to maintain swing trading discipline
+  expected_output: 'A focused daily consensus report including: 1) Ranking of ALL
+    analyst recommendations by support level and confidence, 2) Final TOP 5 selections
+    across all asset classes meeting 6+ analyst threshold with 8+ confidence, 3) Swing
+    trading setup for each pick with entry triggers, stop-losses, and profit targets,
+    4) Sector competition analysis showing why these 5 beat others, 5) Weekly trading
+    frequency tracking (4 trades max), 6) Risk-adjusted return projections for 3-10
+    day timeframes, 7) Daily consistency tracking with previous recommendations'
+  agent: senior_investment_committee_moderator
+  context:
+  - daily_technical_swing_trading_analysis
+  - daily_fundamental_swing_catalyst_analysis
+  - geopolitical_risk_assessment
+  - chart_pattern_analysis
+  - momentum_and_sentiment_analysis
+  - cryptocurrency_market_analysis
+  - small_cap_opportunity_discovery
+  - macro_sector_flow_analysis
+  - etf_market_opportunity_analysis
+  - commodity_and_materials_market_analysis
+  - federal_reserve_policy_impact_analysis
