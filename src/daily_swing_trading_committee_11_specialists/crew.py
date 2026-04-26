@@ -1,9 +1,13 @@
 import os
 import requests
+from pathlib import Path
 from crewai import LLM, Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
 
-# [설정] 무료 Groq 모델 정의 (Llama 3.1 70B - 강력한 지능)
+# [추가] 파일 위치를 찾기 위한 기준 경로 설정
+base_path = Path(__file__).parent
+
+# [설정] 무료 Groq 모델 정의
 GROQ_LLM = LLM(
     model="groq/llama-3.1-70b-versatile",
     api_key=os.getenv("GROQ_API_KEY")
@@ -13,17 +17,20 @@ GROQ_LLM = LLM(
 class DailySwingTradingCommittee11SpecialistsCrew:
     """DailySwingTradingCommittee11Specialists crew"""
 
+    # [수정] 설정 파일의 경로를 절대 경로로 직접 지정 (에러 방지 핵심)
+    agents_config = os.path.join(base_path, 'config/agents.yaml')
+    tasks_config = os.path.join(base_path, 'config/tasks.yaml')
+
     # --- 텔레그램 전송 함수 ---
     def send_telegram_msg(self, result):
         token = os.getenv("TELEGRAM_BOT_TOKEN")
         chat_id = os.getenv("TELEGRAM_CHAT_ID")
         if token and chat_id:
             url = f"https://api.telegram.org/bot{token}/sendMessage"
-            # 마크다운 없이 일반 텍스트로 안전하게 전송
             text = f"🚀 [AI 투자 위원회 결론]\n\n{str(result)}"
             requests.post(url, json={"chat_id": chat_id, "text": text[:4000]})
 
-    # --- 에이전트 정의 (tools=[] 로 모두 비워서 API 키 에러 방지) ---
+    # --- 에이전트 정의 (LLM은 Groq, Tools는 비움) ---
 
     @agent
     def senior_technical_market_analyst(self) -> Agent:
@@ -96,38 +103,4 @@ class DailySwingTradingCommittee11SpecialistsCrew:
         return Task(config=self.tasks_config["momentum_and_sentiment_analysis"])
 
     @task
-    def cryptocurrency_market_analysis(self) -> Task:
-        return Task(config=self.tasks_config["cryptocurrency_market_analysis"])
-
-    @task
-    def small_cap_opportunity_discovery(self) -> Task:
-        return Task(config=self.tasks_config["small_cap_opportunity_discovery"])
-
-    @task
-    def macro_sector_flow_analysis(self) -> Task:
-        return Task(config=self.tasks_config["macro_sector_flow_analysis"])
-
-    @task
-    def etf_market_opportunity_analysis(self) -> Task:
-        return Task(config=self.tasks_config["etf_market_opportunity_analysis"])
-
-    @task
-    def commodity_and_materials_market_analysis(self) -> Task:
-        return Task(config=self.tasks_config["commodity_and_materials_market_analysis"])
-
-    @task
-    def federal_reserve_policy_impact_analysis(self) -> Task:
-        return Task(config=self.tasks_config["federal_reserve_policy_impact_analysis"])
-
-    @task
-    def daily_investment_committee_consensus(self) -> Task:
-        return Task(config=self.tasks_config["daily_investment_committee_consensus"])
-
-    @crew
-    def crew(self) -> Crew:
-        return Crew(
-            agents=self.agents,
-            tasks=self.tasks,
-            process=Process.sequential,
-            verbose=True
-        )
+    def
